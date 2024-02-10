@@ -10,10 +10,8 @@
         $this->price = $price;
       }
       // メソッド定義
-      public function set_price(int $price){
+      public function show_price(int $price){
         $this->price = $price;
-      }
-      public function show_price(){
         echo $this->price . '<br>';
       }
     }
@@ -29,10 +27,8 @@
         $this->weight = $weight;
       }
 
-      public function set_height(int $height){
+      public function show_height(int $height){
         $this->height = $height;
-      }
-      public function show_height(){
         echo $this->height;
       }
       
@@ -49,9 +45,6 @@
     echo '<br>';
 
     // メソッドアクセス
-    $potato->set_price(250);
-    $potato->show_price();
-
-    $dog->set_height(60);
-    $dog->show_height();
+    $potato->show_price(250);
+    $dog->show_height(60);
 ?>
